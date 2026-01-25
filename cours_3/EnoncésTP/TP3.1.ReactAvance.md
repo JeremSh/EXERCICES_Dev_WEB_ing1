@@ -1,4 +1,4 @@
-# TP : React Avancé
+# TP 3.1 : React Avancé
 
 ### 1. Transfert de props
 
@@ -22,7 +22,7 @@ Cela signifie qu’il doit pouvoir être utilisé comme suit :
 
 L'ui final devra ressembler à ça : 
 
-![transfert-de-props](./forwarded-props-exercice.png)
+![transfert-de-props](./tp_images/forwarded-props-exercice.png)
 
 ---
 
@@ -42,7 +42,7 @@ ou
 ```
 Ces syntaxes doivent produire un bouton avec un style "rempli" (comme illustré dans les exemples visuels) : 
 
-![default_filled_buttons](./default_filled.png)
+![default_filled_buttons](./tp_images/default_filled.png)
 
 
 #### **2.2. Mode "Outline"**
@@ -51,7 +51,7 @@ Ces syntaxes doivent produire un bouton avec un style "rempli" (comme illustré 
 ```
 Cela doit générer un bouton avec un contour visible (style "outline") : 
 
-![outline_buttons](./outline_button.png)
+![outline_buttons](./tp_images/outline_button.png)
 
 #### **2.3. Mode "Text-only"**
 ```jsx
@@ -59,7 +59,7 @@ Cela doit générer un bouton avec un contour visible (style "outline") :
 ```
 Cela doit afficher un bouton sous forme de texte simple, sans fond ni bordure prononcée : 
 
-![text_buttons](./text_button.png)  
+![text_buttons](./tp_images/text_button.png)  
 
 #### **2.4. Avec icône**
 ```jsx
@@ -73,7 +73,7 @@ ou
 ```
 Ces syntaxes doivent produire des boutons intégrant une icône à gauche du texte : 
 
-![home_add_buttons](./home_add_buttons.png)
+![home_add_buttons](./tp_images/home_add_buttons.png)
 
 #### **2.5. Le boutton doit supportter n'importe quelles props**
 
@@ -92,7 +92,7 @@ Le composant Button doit être également capable par défaut de prendre en comp
 
 Les boutons résultants du code jsx ci-dessus devront avoir cet aspect : 
 
-![disabled_button](./disabled_button.png)
+![disabled_button](./tp_images/disabled_button.png)
 
 
 **Astuce** :
@@ -131,8 +131,6 @@ L’application doit permettre aux utilisateurs de :
 
 **Exemple visuel** : Le rendu final doit ressembler à l’illustration fournie (avec les valeurs saisies reflétées dans le composant **Review**).
 
-![two-way-binding-ex](./two-way-binding-ex.png)
+![two-way-binding-ex](./tp_images/two-way-binding-ex.png)
 
 **Remarque** : Le bouton **"Save"** est présent à titre décoratif – **aucun développement n'est nécessaire** de votre part pour ce bouton.
-
----
