@@ -6,9 +6,9 @@ L'exercice devra se faire dans le dossier context-api.
 
 L'exercice devra se faire dans le dossier context-api.
 
-Votre tâche consiste à ajouter une fonctionnalité de **"thème"** à une application de démonstration fournie par un collègue. Cette fonctionnalité doit être implémentée à l’aide de **l’API Context de React**.
+Votre tâche consiste à ajouter une fonctionnalité **"thème"** à une demo d'application fournie par un collègue. Cette fonctionnalité doit être implémentée à l’aide de **l’API Context de React**.
 
-**Votre objectif principal** est de vous assurer que le bouton **"Toggle Theme"** dans le composant **Header** déclenche une fonction **`toggleTheme()`** (que vous devrez ajouter) exposée via le contexte.
+**Votre objectif principal** est de vous assurer que le bouton **"Toggle Theme"** dans le composant **Header** déclenche une fonction **`toggleTheme()`** (que vous devrez implémenter) exposée via le contexte.
 
 ### **Exigences techniques :**
 1. **Gestion dynamique du contexte** :
@@ -40,11 +40,11 @@ Pour atteindre cet objectif, vous devez **améliorer la fonction `counterReducer
 
 **Dans le composant App**, vous devrez :
 1. Utiliser le hook **`useReducer()`** avec cette fonction `counterReducer` pour gérer l’état du compteur.
-2. **Connecter les trois boutons** `<button>` à l’état géré par le réducteur (c’est-à-dire qu’ils doivent déclencher des changements d’état).
+2. **Connecter les trois boutons** `<button>` à l’état géré par le reducer (c’est-à-dire qu’ils doivent déclencher des changements d’état).
 3. Le paragraphe `<p id="counter">` doit afficher la valeur du compteur (`count`).
 
 **Structure obligatoire de l’état** :
-L’état géré par le réducteur doit être un objet de la forme suivante :
+L’état géré par le reducer doit être un objet de la forme suivante :
 ```javascript
 {
   count: 0; // Bien sûr, 0 n’est pas statique et change en fonction des clics sur les boutons
