@@ -1,7 +1,31 @@
-export default function Button() {
- // Todo: Build this component!
+type ButtonProps = {
+    children: React.ReactNode;
+    className?: string;
+    mode?: 'filled' | 'outline' | 'text';
+    Icon?: React.ComponentType<{ className?: string }>;
+}
+
+
+export default function Button({ children, className, mode = 'filled', Icon, ...props}: ButtonProps) {
+// On construit la class pour le CSS au fur et a mesure
+  let cssClasses = `button ${mode}-button`;
  
- // !!! Important: 
- // Wrap the icon with a <span className="button-icon"> to achieve the target look
- // Also wrap the children prop with a <span>
+  if (Icon) {
+    cssClasses += ' icon-button';
+  }
+ 
+  if (className) {
+    cssClasses += ' ' + className;
+  }
+ 
+  return (
+    <button className={cssClasses} {...props}>
+      {Icon && (
+        <span className="button-icon">
+          <Icon />
+        </span>
+      )}
+      <span>{children}</span>
+    </button>
+  );
 }
